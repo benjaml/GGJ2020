@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{56176AFA-62BF-4148-B61E-EA38CDE9E418}" SchemaVersion="94">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{56176AFA-62BF-4148-B61E-EA38CDE9E418}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{1CF03C9F-35FF-4E65-90C1-6F7DF90ACBD4}" WorkUnitID="{1BB8F120-65A9-4612-A98F-033D0B3EF26C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MASTER" ID="{6EB2F919-3125-460D-97C4-A2F63B5B47D7}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{566F0F2E-0D50-442B-A641-C731D500DB5C}" ShortID="941542469">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MASTER_Volume" ID="{2293FAB1-DA41-49E7-BB64-0DBEAF9C2813}" WorkUnitID="{2F818DE0-FC16-41CA-BCDC-E10CD0D3D782}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F978D33D-2EF9-4AC9-9829-2494F0C7A4C8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="SFX" ID="{FB9B1D36-CC12-4600-A49B-CC14DD83F00A}"/>
+								<Bus Name="GUI" ID="{9F62FF3D-CD04-4947-8968-27BC674AFBD3}"/>
+								<Bus Name="MUSIC" ID="{D3A642D8-ACCD-4BD2-8231-DD33D6071F63}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
